@@ -46,7 +46,7 @@ module TicTacToe
         origins do |origin, _env|
           ENV['CLIENT_ORIGIN'] == '*' ||
             origin == ENV['CLIENT_ORIGIN'] ||
-            origin == "http://localhost:#{cors_port}"
+            origin == "http://localhost:8080"
         end
         resource '*',
                  headers: :any,
